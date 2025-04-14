@@ -3,161 +3,440 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>LANTARKI SHOP </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANTARKI SHOP - Matériel électrique et électronique</title>
+    <meta name="description" content="Vente de matériel électrique, installations photovoltaïques et dépannage. Le pionnier en la matière à Niamey.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function changeLanguage(lang) {
-            // Ici vous pouvez mettre le code pour changer la langue
-            alert("La langue a été changée en : " + lang);
-        }
-    </script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <u>
-                <li id="logo"><a href="#"> LANTARKI SHOP</a></li>
-                <li><a href="#langue" onclick="changeLanguage('fr')">Français</a></li>
-                <li><a href="#langue" onclick="changeLanguage('en')">English</a></li>
-                <li><a href="#reserve">reserver</a></li>
-                <li><a href="#contact">Nous contacter</a></li>
-            </u>
-        </nav>
-        <div id="imagePrincipale">
-            <h1>LANTARKI SHOP </h1>
-            <div id="premierTrait"></div>
-            <h2> vente de matériels d'électriciter </h2>
+    <!-- Barre de navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">LANTARKI <span>SHOP</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#langue" class="lang-btn" onclick="changeLanguage('fr')">FR</a></li>
+                    <li><a href="#langue" class="lang-btn" onclick="changeLanguage('en')">EN</a></li>
+                    <li><a href="#reserve">Réserver</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
-    <section id="presentation">
-        <div id="texteIntro">
-            <h2>le pionnier en la matiére </h2>
-            <p>Pour tous vos besoins en matériel électrique et électronique, LANTARKI SHOP est à votre service. Nous vous proposons également des installations photovoltaïques et des solutions de dépannage. LANTARKI est qualifié pour vous garantir une satisfaction optimale. Rendez-vous dans notre magasin situé au quartier D'Ar Salam, deuxième pavé.
-            </p>
-        </div>
-        <div class="imagesPrestations">
-            <h4> pour vos installations batiments </h4>
-            <a href="#"><img src="media/circuit.jpg" alt="carte" height="800" width="800"></a>
-        </div>
-        <div class="imagesPrestations">
-            <h4> pour vos dépannages </h4>
-            <a href="#"><img src="media/depannage.jpg" alt="carte" height="800" width="800"></a>
-            <h1> Pour vos achats, nous proposons du matériel électrique et électronique de qualité. </h1>
-        </div>
-        <div class="imagesPrestations">
-            <h4> les ampoules toutes genres </h4>
-            <a href="#"><img src="media/ampoul.jpg" alt="carte" height="800" width="800"></a>
-        </div>
-        <div class="imagesPrestations">
-            <h4> les prises et interupteurs </h4>
-            <a href="#"><img src="media/priseinterupteur.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/prisesimple.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/interupteur.jpg" alt="carte" height="800" width="800"></a>
-        </div>
 
-        <div class="imagesPrestations">
-            <h4> les files </h4>
-            <a href="#"><img src="media/fil2.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/fil.jpg" alt="carte" height="800" width="800"></a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LANTARKI SHOP</h1>
+            <div class="divider"></div>
+            <h2>Vente de matériels d'électricité</h2>
+            <a href="#contact" class="cta-button">Nous contacter</a>
         </div>
-        <div class="imagesPrestations">
-            <h4> les rallonges </h4>
-            <a href="#"><img src="media/rallonges.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/rallonge.jpg" alt="carte" height="800" width="800"></a>
-        </div>
-        <div class="imagesPrestations">
-            <h4> les ventilateurs </h4>
-            <a href="#"><img src="media/oxygen.png" alt="carte" height="500" width="800"></a>
-            <a href="#"><img src="media/ventilateur_de_plafond_tmt_2_ (1).jpg" alt="carte" height="500" width="800"></a>
-            <a href="#"><img src="media/ventilateur .jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/ventilateur miral.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/ventilateur orbit.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/ventilateur pp.jpg" alt="carte" height="800" width="500"></a>
-            <a href="#"><img src="media/ventilateurOx.jpg" alt="carte" height="800" width="500"></a>
-
-            <h4>les humidificateurs </h4>
-            <a href="#"><img src="media/humidificater.jpg" alt="carte" height="800" width="800"></a>
-            <a href="#"><img src="media/Humidificateur.jpg" alt="carte" height="800" width="800"></a>
-        </div>
+        <div class="hero-overlay"></div>
     </section>
-    <section id="plus de sugestions ">
-        <h2>et tant à découvrir...</h2>
-        <ul>
-            <li id="les panneaux "><p> Les panneaux solaire </p></li>
-            <li id="les outils électrique"><p>Les outils</p></li>
-            <li id="les batteries "><p> Les batteries </p></li>
-            <li id="les batteries "><p> Les decodeurs </p></li>
-        </ul>
-        <div id="prestations">
-            <div class="imagesPrestations">
-                <h4> les matériels </h4>
-                <a href="#"><img src="media/materiel.jpg" alt="carte" height="600" width="800"></a>
-                <a href="#"><img src="media/materils.jpg" alt="carte" height="600" width="800"></a>
-                <h4>les panneaux </h4>
-                <a href="#"><img src="media/paneau.jpg" alt="carte" height="600" width="800"></a>
-                <a href="#"><img src="media/panneau.jpg" alt="carte" height="600" width="800"></a>
-                <a href="#"><img src="media/panneauxf.jpg" alt="carte" height="600" width="800"></a>
-                <a href="#"><img src="media/decodeur tnt.jpg" alt="carte" height="600" width="800"></a>
-                <a href="#"><img src="media/decodeur.jpg" alt="carte" height="600" width="800"></a>
-                <a href="#"><img src="media/choisir-marque-disjoncteur-tableau-electrique.jpg" alt="carte" height="600" width="800"></a>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Le pionnier en la matière</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="presentation-content">
+                <div class="presentation-text">
+                    <p>Pour tous vos besoins en matériel électrique et électronique, LANTARKI SHOP est à votre service. Nous vous proposons également des installations photovoltaïques et des solutions de dépannage. LANTARKI est qualifié pour vous garantir une satisfaction optimale. Rendez-vous dans notre magasin situé au quartier D'Ar Salam, deuxième pavé.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer style="padding: 40px 0; font-size: 1.2em;">
-        <div class="contact">
-            <h2 id="contact">Contactez Nous</h2>
-            <form>
-                <div class="row">
-                    <div class="col-sm-19">
-                        <input class="contactus" placeholder="Name" type="text" name="Name">
-                    </div>
-                    <div class="col-sm-12">
-                        <input class="contactus" placeholder="Phone" type="text" name="Email">
-                    </div>
-                    <div class="col-sm-12">
-                        <input class="contactus" placeholder="Email" type="text" name="Email">
-                    </div>
-                    <div class="col-sm-12">
-                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                    </div>
-                    <div class="col-sm-12">
-                        <button class="envoyer">Send</button>
+    <!-- Galerie Produits -->
+    <section class="products-gallery">
+        <div class="container">
+            <!-- Installation Bâtiments -->
+            <div class="product-category">
+                <h3>Pour vos installations bâtiments</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/circuit.jpg" alt="Circuit électrique">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
                     </div>
                 </div>
-            </form>
-            <p>Pour nous contacter : <br>
-                Téléphone : 91 37 10 26, 98 10 73 33 <br>
-                Email : <a href="mailto:Lantarkishop@gmail.com">Lantarkishop@gmail.com</a>
-            </p>
-        </div>
-        <div id="copyrightEtIcons" style="text-align: center;">
-            <div id="copyright">
-                <span>© fromScratch(); 2020</span>
             </div>
-            <div id="icons">
-     
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 
-<a href="https://wa.me/+22798107333" class="fa fa-whatsapp"></a>
-                <a href="#" class="fa fa-instagram"></a>
-               
+            <!-- Dépannages -->
+            <div class="product-category">
+                <h3>Pour vos dépannages</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/depannage.jpg" alt="Service de dépannage">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="category-description">Pour vos achats, nous proposons du matériel électrique et électronique de qualité.</p>
+            </div>
+
+            <!-- Ampoules -->
+            <div class="product-category">
+                <h3>Les ampoules toutes genres</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/ampoul.jpg" alt="Ampoules électriques">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prises et interrupteurs -->
+            <div class="product-category">
+                <h3>Les prises et interrupteurs</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/priseinterupteur.jpg" alt="Prises et interrupteurs">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/prisesimple.jpg" alt="Prise simple">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/interupteur.jpg" alt="Interrupteur">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fils -->
+            <div class="product-category">
+                <h3>Les fils</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/fil2.jpg" alt="Fils électriques">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/fil.jpg" alt="Fils électriques">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rallonges -->
+            <div class="product-category">
+                <h3>Les rallonges</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/rallonges.jpg" alt="Rallonges électriques">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/rallonge.jpg" alt="Rallonge électrique">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ventilateurs -->
+            <div class="product-category">
+                <h3>Les ventilateurs</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/oxygen.png" alt="Ventilateur Oxygen">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/ventilateur_de_plafond_tmt_2_ (1).jpg" alt="Ventilateur de plafond TMT">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/ventilateur .jpg" alt="Ventilateur">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/ventilateur miral.jpg" alt="Ventilateur Miral">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/ventilateur orbit.jpg" alt="Ventilateur Orbit">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/ventilateur pp.jpg" alt="Ventilateur PP">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/ventilateurOx.jpg" alt="Ventilateur Oxygen">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Humidificateurs -->
+            <div class="product-category">
+                <h3>Les humidificateurs</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/humidificater.jpg" alt="Humidificateur">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/Humidificateur.jpg" alt="Humidificateur">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Autres Produits -->
+    <section id="autres-produits" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Et tant à découvrir...</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="other-products">
+                <div class="product-list">
+                    <div class="product-card">
+                        <i class="fas fa-solar-panel"></i>
+                        <h4>Les panneaux solaires</h4>
+                    </div>
+                    <div class="product-card">
+                        <i class="fas fa-tools"></i>
+                        <h4>Les outils électriques</h4>
+                    </div>
+                    <div class="product-card">
+                        <i class="fas fa-battery-full"></i>
+                        <h4>Les batteries</h4>
+                    </div>
+                    <div class="product-card">
+                        <i class="fas fa-satellite-dish"></i>
+                        <h4>Les décodeurs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Supplémentaire -->
+    <section class="additional-gallery">
+        <div class="container">
+            <div class="product-category">
+                <h3>Les matériels</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/materiel.jpg" alt="Matériel électrique">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/materils.jpg" alt="Matériel électrique">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h3>Les panneaux</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/paneau.jpg" alt="Panneau solaire">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/panneau.jpg" alt="Panneau solaire">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/panneauxf.jpg" alt="Panneaux solaires">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h3>Les décodeurs</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/decodeur tnt.jpg" alt="Décodeur TNT">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="media/decodeur.jpg" alt="Décodeur">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="media/choisir-marque-disjoncteur-tableau-electrique.jpg" alt="Disjoncteur">
+                        <div class="product-overlay">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Votre téléphone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Coordonnées</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Quartier D'Ar Salam, deuxième pavé, Niamey</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>91 37 10 26<br>98 10 73 33</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:Lantarkishop@gmail.com">Lantarkishop@gmail.com</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/+22798107333" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">LANTARKI <span>SHOP</span></a>
+                    <p>Le pionnier en matériel électrique et électronique</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#presentation">Nos produits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#langue" onclick="changeLanguage('fr')">Français</a></li>
+                        <li><a href="#langue" onclick="changeLanguage('en')">English</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Quartier D'Ar Salam, Niamey</p>
+                    <p><i class="fas fa-phone"></i> 91 37 10 26 / 98 10 73 33</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> LANTARKI SHOP. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Ce script évite que l'image défile vers le haut lors du clic sur les images
-        document.querySelectorAll('.imagesPrestations a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                // Ici vous pouvez ajouter le code que vous souhaitez exécuter lors du clic sur l'image
-                alert("Image cliquée : " + this.querySelector('img').alt);
-            });
-        });
-    </script>
+    <!-- Bouton Retour en haut -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <button class="inquire-btn">Demander plus d'infos</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
-</html>
+                        </html>
